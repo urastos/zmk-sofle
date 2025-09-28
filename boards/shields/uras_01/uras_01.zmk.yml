@@ -1,0 +1,17 @@
+file_format: "1"
+id: sofle
+name: Sofle
+type: shield
+url: https://github.com/josefadamcik/SofleKeyboard
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+  - underglow
+  - studio
+siblings:
+  - uras_01_central
+  - uras_01_left
+  - uras_01_right

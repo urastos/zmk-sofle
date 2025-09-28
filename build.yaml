@@ -20,8 +20,10 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: sofle_left
+    shield: uras_01_central
   - board: nice_nano_v2
-    shield: sofle_right
+    shield: uras_01_left
+  - board: nice_nano_v2
+    shield: uras_01_right
   - board: nice_nano_v2
     shield: settings_reset
