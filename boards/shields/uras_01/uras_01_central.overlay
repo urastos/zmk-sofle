@@ -5,12 +5,23 @@
         zmk,kscan = &mock_kscan;
         zephyr,display = &oled;
     };
-    mock_kscan: kscan_1 {
+    mock_kscan: kscan0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
+};
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        ;
 };
 
 &pro_micro_i2c {
